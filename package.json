@@ -1,0 +1,45 @@
+{
+  "name": "oauth2-postgres",
+  "version": "1.0.0",
+  "description": "ts express server with mysql db and authentication",
+  "main": "src/index.ts",
+  "scripts": {
+    "start:dev": "nodemon dist/index.js",
+    "build:dev": "tsc --watch --preserveWatchOutput",
+    "dev": "concurrently \"npm:build:dev\" \"npm:start:dev\"",
+    "start": "node dist/index",
+    "webpack": "webpack --config webpack.config.ts"
+  },
+  "author": "@vallq",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.3.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.7",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.7",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.0.27",
+    "@types/pg": "^7.14.4",
+    "@types/validator": "^13.1.0",
+    "concurrently": "^5.2.0",
+    "helmet": "^4.0.0",
+    "nodemon": "^2.0.4",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "typeorm": "^0.2.25",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
+  }
+}
